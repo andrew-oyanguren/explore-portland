@@ -1,0 +1,37 @@
+/* 
+  ===== Jumbotron =====
+   1. Set size and color of Jumbotron Title.
+   2. Added background image and positioning.
+*/
+
+.jumbotron {
+  background: url(/explore-portland/img/jumbotron/jumbotron.jpg) center center;
+  background-size: cover;
+  #{&}__title {
+    font-size: 3.25rem;
+    font-family: $ff-headers;
+    color: rgba(46, 38, 31, 0.87);
+  }
+}
+
+
+/*
+  ===== Media Queries =====
+   1. Resized Jumbotron Title to better fit phone/tablet/and desktop screen sizes.
+*/
+
+@media (min-width: $breakpoint-phone) {
+  .jumbotron {
+    #{&}__title {
+      font-size: 3.75rem;
+    }
+  }
+}
+
+@media (min-width: $breakpoint-tablet) {
+  .jumbotron {
+    #{&}__title {
+      font-size: 5rem;
+    }
+  }
+}

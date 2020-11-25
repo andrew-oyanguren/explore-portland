@@ -1,0 +1,193 @@
+/* 
+  ===== Contact Section =====
+*/ 
+
+.contact {
+  margin-top: 2.25rem;
+  background-color: rgba(45, 70, 49, 0.9);
+
+  .container-lg {
+    padding-bottom: 6rem;
+  }
+
+  &-title {
+
+    h2 {
+      display: inline-block;
+      background-color: rgba(233, 233, 233, 0.87);
+      color: $color-dark;
+      box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.155);
+      font-size: 1.85rem;
+      font-family: $ff-headers;
+      font-weight: $fw-regular;
+      text-transform: uppercase;
+      padding: 1rem 1.25rem;
+      margin-bottom: 1rem;
+
+      border-top-right-radius: .5rem;
+      border-bottom-right-radius: .5rem;
+    }
+  }
+
+  &-team {
+    width: 90%;
+    max-width: 460px;
+    margin-top: 2.5rem;
+    margin-bottom: 3rem;
+    @include self-align-left;
+
+    &-wrapper {
+      
+      h3 {
+        background-color: rgba(39, 31, 24, 0.829);
+        color: $color-light;
+        font-size: 1.25rem;
+        text-transform: uppercase;
+        padding: .45rem 0;
+        padding-left: .5rem;
+      }
+
+      img {
+        box-shadow: $box-shadow-img;
+      }
+    }
+
+  }
+
+  &-form-wrapper {
+    width: 90%;
+    max-width: 460px;
+    @include self-align-left;
+
+    .contact-form-title {
+      color: $color-dark;
+      font-size: 1.65rem;
+      text-transform: uppercase;
+    }
+
+    .contact-form {
+      background-color: rgb(230, 230, 230);
+      padding: 2rem;
+      padding-top: 1.5rem;
+      border-radius: .5rem;
+
+      label {
+        color: $color-dark;
+        font-size: 0.9rem;
+        text-transform: uppercase;
+      }
+
+      input {
+        border: none;
+      }
+
+      textarea {
+        resize: none;
+        width: 100%;
+        border-radius: .35rem;
+        outline: none;
+        border: none;
+      }
+
+      button {
+        text-transform: uppercase;
+      }
+    }
+
+  }
+
+}
+
+
+/* 
+  ===== Media Queries =====
+  1. Increased section title size at breakpoints.
+  2. Adjusted width of content sections, and added max-width sizes at breakpoints.
+  3. At tablet added a display of flexbox to the "row".
+  4. Removed center align "mixins" to content sections.
+  5. Added margin for vertical alignment.
+*/
+
+@media (min-width: $breakpoint-phone) {
+  .contact {
+    &-title {
+      h2 {
+        font-size: 2.35rem;
+      }
+    }
+
+    &-team {
+      width: 75%;
+      max-width: 460px;
+
+      &-wrapper {
+      
+        h3 {
+          font-size: 1.35rem;
+          padding: .5rem 0;
+          padding-left: .5rem;
+        }
+      }
+    }
+
+    &-form-wrapper {
+      width: 75%;
+      max-width: 460px;
+    }
+  }
+}
+
+@media (min-width: $breakpoint-tablet) {
+  .contact {
+    .row {
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+
+    }
+
+    &-team {
+      @include self-align-left-reset;
+      max-width: 100%;
+      min-width: 460px;
+      margin-top: 3rem;
+
+      &-wrapper {
+      
+        h3 {
+          font-size: 1.5rem;
+          padding: .65rem 0;
+          padding-left: .5rem;
+        }
+      }
+    }
+
+    &-form-wrapper {
+      @include self-align-left-reset;
+      max-width: 100%;
+      min-width: 460px;
+    }
+  }
+}
+
+@media (min-width: $breakpoint-desktop) {
+  .contact {
+    margin-top: 5rem;
+
+    &-title {
+      margin-bottom: 1.5rem;
+      h2 {
+        font-size: 2.55rem;
+      }
+    }
+
+    &-team {
+      max-width: 85%
+    }
+
+    &-form-wrapper {
+      max-width: 85%;
+    }
+
+  }
+}

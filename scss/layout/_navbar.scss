@@ -1,0 +1,109 @@
+
+/* 
+  ===== Navbar =====
+  -----Toggler -----
+   1. Targeted focus and active states to remove outline and box-shadow from hamburger toggler.
+   2. Changed size of the hamburger itself.
+  ----- Nav Links -----
+   1. Changed colore of "Plan Your Trip" link on hover state.
+   2. Included transition ease-in
+*/
+
+
+
+.navbar {
+  background-color: rgba(39, 31, 24, 0.87); /* change color */
+
+  &-brand {
+    font-family: $ff-decorative;
+
+    span {
+      font-size: 1.5rem;
+      text-transform: uppercase;
+    }
+  }
+
+  &-toggler {
+
+    &:focus,
+    &:active {
+        outline: none;
+        box-shadow: none;
+      }
+
+    &-icon {
+      font-size: 1.75rem;
+
+      &:focus {
+        outline: none;
+        box-shadow: none;
+      }
+    }
+  }
+
+  &-nav {
+    
+    .nav-item {
+
+      &:last-child {
+        outline: solid 1px $color-light;
+        width: max-content;
+        padding: 0 .5rem;
+        @include trans-ease-in;
+
+        &:hover {
+          outline: solid 1px rgba(255, 169, 57, 0.781);
+          @include trans-ease-in;
+        }
+
+        .nav-link:hover {
+          color: rgba(255, 169, 57, 0.781);
+          @include trans-ease-in; 
+        }
+      }
+
+      .nav-link {
+        font-size: 1.25rem;
+        text-transform: uppercase;
+        @include trans-ease-in;
+        
+        &:hover {
+          @include trans-ease-in;
+        }
+      }
+    }
+
+  }
+}
+
+/* 
+  ===== Media Queries =====
+  ----- Nav Links -----
+   1. Added Outline around "Plan Your Trip" link.
+   2. Changed Outline color on hover state.
+   3. Included transition ease-in
+*/
+
+@media (min-width: $breakpoint-tablet) {
+  .navbar {
+
+    &-nav {
+
+      .nav-item {
+        margin-left: .75rem;  
+      }
+    }
+  }
+}
+
+@media (min-width: $breakpoint-desktop) {
+  .navbar {
+
+    .navbar-nav {
+      
+      .nav-item {
+        margin-left: 1.5rem;
+      }
+    }
+  }
+}

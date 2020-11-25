@@ -1,0 +1,78 @@
+/* 
+  ===== Hero =====
+   1. Set hero width and height 100.
+   2. Applied fixed background to hero.
+   --- Row ---
+    1. Added height 100vh to row for center alignment.
+    2. Included Flex Center mixin.
+   --- Content ---
+    1. Set position to relative to further adjust content.
+    2. Set font sizes for text items.
+*/   
+
+.hero {
+  width: 100%;
+  height: 90vh;
+  background: url('/explore-portland/img/hero/portland-skyline.jpg') left;
+  background-size: cover;
+  background-attachment: fixed;
+
+  .row{
+    height: 100vh;
+    @include flex-align-center;
+  }
+
+  &-content {
+    position: relative;
+    top: 3.5rem; // adjust the position after adding image url.
+    left: 2rem;
+
+    .lead {
+      font-size: 2.5rem;
+      color: $color-light;
+    }
+
+    .brochure-link {
+      color: $color-light;
+    }
+
+  }
+}
+
+/* 
+  ===== Media Queries =====
+   --- hero content ---
+   1. Changed font sizes of text items to better fit screen sizes.
+   2. Positioned content at breakpoints
+*/   
+
+@media (min-width: $breakpoint-tablet) {
+  .hero {
+    #{&}-content {
+      position: relative;
+      top: 3.5rem; // adjust the position after adding image url.
+  
+      .lead {
+        font-size: 3rem;
+      }
+  
+      .brochure-link {
+        font-size: 1.1rem;
+      }
+    }
+  }
+}
+
+@media (min-width: $breakpoint-desktop) {
+  .hero {
+    #{&}-content {
+      position: relative;
+      top: 3.5rem; 
+  
+      .lead {
+        font-size: 3.25rem;
+      }
+
+    }
+  }
+}

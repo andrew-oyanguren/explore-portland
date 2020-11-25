@@ -1,0 +1,36 @@
+/*
+  ===== Carousel =====
+  1. Set size of control icons
+*/ 
+
+.fa-chevron-left,
+.fa-chevron-right {
+  font-size: 1.75rem;
+  cursor: pointer;
+}
+
+/* 
+  ===== Media Queries =====
+  1.
+*/
+
+@media (min-width: $breakpoint-phone) {
+  .fa-chevron-left,
+  .fa-chevron-right {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: $breakpoint-tablet) {
+  .fa-chevron-left,
+  .fa-chevron-right {
+    font-size: 3.5rem;
+  }
+}
+
+@media (min-width: $breakpoint-desktop) {
+  .fa-chevron-left,
+  .fa-chevron-right {
+    font-size: 4rem;
+  }
+}

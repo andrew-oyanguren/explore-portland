@@ -1,0 +1,145 @@
+/* 
+  ===== Top Picks Section =====
+*/ 
+
+.top-picks {
+  margin-top: 4rem;
+
+
+  &-title {
+    h2 {
+      display: inline-block;
+      background-color: rgba(233, 233, 233, 0.87);
+      color: $color-dark;
+      box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.155);
+      font-size: 1.85rem;
+      font-family: $ff-headers;
+      font-weight: $fw-regular;
+      text-transform: uppercase;
+      padding: 1rem 1.25rem;
+      margin-bottom: 1rem;
+
+      border-top-right-radius: .5rem;
+      border-bottom-right-radius: .5rem;
+    }
+  }
+
+  &-content {
+
+    .container-lg {
+      padding-top: 1rem;
+    }
+
+    .content-wrapper {
+      width: max-content;
+      padding-bottom: 4rem;
+
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+
+      img {
+        box-shadow: $box-shadow-img;
+      }
+
+      a {
+        background-color: rgba(44, 35, 27, 0.87);
+        margin: .5rem 0;
+        text-transform: uppercase;
+        border: none;
+        box-shadow: none;
+
+        &:hover {
+          background-color: rgba(54, 43, 33, 0.836);
+        }
+
+      }
+
+      .card {
+        width: 400px;
+        outline: none;
+        border: none;
+        color: $color-medium;
+      }
+    }
+  }
+}
+
+/* 
+  ===== Media Queries =====
+  1. Increased title font size at breakpoints.
+  2. Reduced Image width and height.
+  3. Reduced width of card to match image width.
+  4. Added margin top to section.
+*/
+
+@media (min-width: $breakpoint-phone) {
+  .top-picks {
+
+    &-title {
+
+      h2 {
+        font-size: 2.35rem;
+      }
+    }
+
+    &-content {
+
+      .content-wrapper {
+        img {
+          width: 440px;
+          height: 320px;
+        }
+
+        .card {
+          width: 400px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $breakpoint-tablet) {
+  .top-picks {
+
+    &-content {
+
+      .content-wrapper {
+        img {
+          width: 360px;
+          height: 280px;
+        }
+
+        .card {
+          width: 360px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $breakpoint-desktop) {
+  .top-picks {
+    margin-top: 8rem;
+
+    &-title {
+
+      h2 {
+        font-size: 2.55rem;
+      }
+    }
+
+    &-content {
+      .container-lg {
+        padding-top: 1.5rem;
+        width: 80%;
+      }
+
+      .content-wrapper {
+        a {
+          font-size: 1.25rem;
+        }
+      }
+    }
+  }
+}

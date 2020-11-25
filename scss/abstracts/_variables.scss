@@ -1,0 +1,48 @@
+// ===== Fonts =====
+
+// font sizes:
+
+
+// font family:
+$ff-primary: 'Montserrat', sans-serif;
+$ff-decorative: 'Asap', sans-serif;
+$ff-headers: $ff-decorative;
+
+// font weight:
+$fw-regular: 400;
+$fw-medium: 500;
+$fw-bold: 700;
+
+// ------------------------------------------------------------
+
+// ===== Media Queries =====
+
+// screen sizes: 
+$breakpoint-phone: 576px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 992px;
+$breakpoint-greatest: 1200px;
+
+// ------------------------------------------------------------
+
+// ===== Colors =====
+
+// text color:
+$color-light: rgb(250, 250, 250);
+$color-medium: rgb(75, 75, 75);
+$color-dark: rgb(8, 8, 8);
+
+// page color:
+$primary-color: blue;
+$secondary-color: green;
+$accent-color: tan;
+
+// ------------------------------------------------------------
+
+// ===== shadows =====
+
+// image shadow:
+$box-shadow-img: 0px 8px 10px rgba(0, 0, 0, 0.26);
+
+// carousel shadow:
+$box-shadow-carousel: 0px 4px 10px 6px rgba(0, 0, 0, 0.155);

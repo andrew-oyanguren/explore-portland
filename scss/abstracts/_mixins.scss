@@ -1,0 +1,48 @@
+// ===== Alignment =====
+
+// flex align center
+
+@mixin flex-align-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-align-end {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+// align self in parent
+
+@mixin self-align-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// align self X axis
+
+@mixin self-align-left {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@mixin self-align-left-reset {
+  position: relative;
+  left: 0;
+  transform: translate(0);
+}
+
+// ------------------------------------------------------------
+
+// ===== Transitions =====
+
+// ease-in
+
+@mixin trans-ease-in {
+  transition: all 350ms ease-in;
+}

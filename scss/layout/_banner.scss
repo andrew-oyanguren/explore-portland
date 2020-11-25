@@ -1,0 +1,88 @@
+.banner {
+  margin-top: 5rem;
+
+  &-title-wrapper {
+    background-color: rgba(45, 70, 49, 0.9);
+
+    .banner-title {
+      font-size: 2.5rem;
+      font-weight: $fw-bold;
+      font-family: $ff-headers;
+      color: $color-dark;
+      padding-top: 2rem;
+    }
+
+    .banner-date {
+      font-size: 1.5rem;
+      color: $color-dark;
+    }
+  }
+
+  &-event {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    border-top: solid 1px $color-medium;
+
+    &-title {
+      font-size: 1.35rem;
+      font-weight: $fw-bold;
+      color: $color-dark;
+    }
+
+    p {
+      color: $color-medium;
+    }
+    
+    .banner-link {
+      text-transform: uppercase;
+      font-size: .9rem;
+      font-weight: $fw-medium;
+    }
+  }
+
+}
+
+/* 
+  ===== Media Queries =====
+  1. Added Top and Bottom borders to all 3 columns (as well as Left on Event Columns)
+  2. Gave event content some padding left
+  3. made title <span> a display of block for visual line break.
+*/
+
+
+
+@media (min-width: $breakpoint-tablet) {
+  .banner {
+    &-title-wrapper {
+      border-top: solid 1px $color-medium;
+      border-bottom: solid 1px $color-medium;
+    }
+
+    &-event {
+      border-bottom: solid 1px $color-medium;
+      padding-left: 1rem;
+    }
+  }
+}
+
+@media (min-width: $breakpoint-desktop) {
+  .banner {
+    &-title-wrapper {
+      .banner-title {
+        font-size: 3rem;
+        span {
+          display: block;
+        }
+      }
+    }
+
+    &-event {
+      border-left: solid 1px $color-medium;
+      padding-left: 2rem;
+
+      &-title {
+        font-size: 1.55rem;
+      }
+    }
+  }
+}

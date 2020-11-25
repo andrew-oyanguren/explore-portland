@@ -1,0 +1,88 @@
+/* 
+  ===== Footer =====
+*/ 
+
+footer {
+  margin: 3rem 0;
+
+  .social-links {
+    border-top: solid 1px $color-medium;
+    text-align: center;
+    padding-top: 1rem;
+
+    a {
+      font-size: 2.25rem;
+      text-decoration: none;
+      padding: 1rem;
+    }
+
+    p {
+      font-family: $ff-decorative;
+      font-size: 1.45rem;
+      font-weight: $fw-bold;
+      text-transform: uppercase;
+    }
+  }
+
+  .copywrite-info {
+    border-bottom: solid 1px $color-medium;
+
+    a {
+      margin-left: 1.5rem;
+    }
+  }
+}
+
+/* 
+  ===== Media Queries =====
+  1. Increased font sizes of <p> and anchor elements.
+  2. Removed top/bottom border from columns and added new top/bottom border to container.
+  3. Repositioned copywrite content to align with social links content.
+*/
+
+@media (min-width: $breakpoint-phone) {
+  footer {
+    .social-links {
+      p {
+        font-size: 1.65rem;
+      }
+    }
+  }
+}
+
+@media (min-width: $breakpoint-tablet) {
+  footer {
+    .column-border {
+      border-top: solid 1px $color-medium;
+      border-bottom: solid 1px $color-medium;
+    }
+
+    .copywrite-info {
+      border-bottom: none;
+      position: relative;
+      top: 5.85rem;
+      a {
+        margin-left: 1rem;
+      }
+    }
+
+    .social-links {
+      border-top: none;
+      margin-top: 1.15rem;
+    }
+  }
+}
+
+@media (min-width: $breakpoint-desktop) {
+  footer {
+    .copywrite-info {
+      p {
+        font-size: 1.25rem;
+      }
+
+      a {
+        font-size: 1.15rem;
+      }
+    }
+  }
+}

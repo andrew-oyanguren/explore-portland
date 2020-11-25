@@ -1,0 +1,769 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  font-size: 1rem;
+  line-height: 1.5;
+  background-color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  line-height: .9;
+}
+
+button {
+  outline: none;
+  border: none;
+}
+
+/*
+  ===== Carousel =====
+  1. Set size of control icons
+*/
+.fa-chevron-left,
+.fa-chevron-right {
+  font-size: 1.75rem;
+  cursor: pointer;
+}
+
+/* 
+  ===== Media Queries =====
+  1.
+*/
+@media (min-width: 576px) {
+  .fa-chevron-left,
+  .fa-chevron-right {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .fa-chevron-left,
+  .fa-chevron-right {
+    font-size: 3.5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .fa-chevron-left,
+  .fa-chevron-right {
+    font-size: 4rem;
+  }
+}
+
+/* 
+  ===== Jumbotron =====
+   1. Set size and color of Jumbotron Title.
+   2. Added background image and positioning.
+*/
+.jumbotron {
+  background: url(/explore-portland/img/jumbotron/jumbotron.jpg) center center;
+  background-size: cover;
+}
+
+.jumbotron .jumbotron__title {
+  font-size: 3.25rem;
+  font-family: "Asap", sans-serif;
+  color: rgba(46, 38, 31, 0.87);
+}
+
+/*
+  ===== Media Queries =====
+   1. Resized Jumbotron Title to better fit phone/tablet/and desktop screen sizes.
+*/
+@media (min-width: 576px) {
+  .jumbotron .jumbotron__title {
+    font-size: 3.75rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .jumbotron .jumbotron__title {
+    font-size: 5rem;
+  }
+}
+
+/* 
+  ===== Navbar =====
+  -----Toggler -----
+   1. Targeted focus and active states to remove outline and box-shadow from hamburger toggler.
+   2. Changed size of the hamburger itself.
+  ----- Nav Links -----
+   1. Changed colore of "Plan Your Trip" link on hover state.
+   2. Included transition ease-in
+*/
+.navbar {
+  background-color: rgba(39, 31, 24, 0.87);
+  /* change color */
+}
+
+.navbar-brand {
+  font-family: "Asap", sans-serif;
+}
+
+.navbar-brand span {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.navbar-toggler:focus, .navbar-toggler:active {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.navbar-toggler-icon {
+  font-size: 1.75rem;
+}
+
+.navbar-toggler-icon:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.navbar-nav .nav-item:last-child {
+  outline: solid 1px #fafafa;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 0 .5rem;
+  -webkit-transition: all 350ms ease-in;
+  transition: all 350ms ease-in;
+}
+
+.navbar-nav .nav-item:last-child:hover {
+  outline: solid 1px rgba(255, 169, 57, 0.781);
+  -webkit-transition: all 350ms ease-in;
+  transition: all 350ms ease-in;
+}
+
+.navbar-nav .nav-item:last-child .nav-link:hover {
+  color: rgba(255, 169, 57, 0.781);
+  -webkit-transition: all 350ms ease-in;
+  transition: all 350ms ease-in;
+}
+
+.navbar-nav .nav-item .nav-link {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  -webkit-transition: all 350ms ease-in;
+  transition: all 350ms ease-in;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  -webkit-transition: all 350ms ease-in;
+  transition: all 350ms ease-in;
+}
+
+/* 
+  ===== Media Queries =====
+  ----- Nav Links -----
+   1. Added Outline around "Plan Your Trip" link.
+   2. Changed Outline color on hover state.
+   3. Included transition ease-in
+*/
+@media (min-width: 768px) {
+  .navbar-nav .nav-item {
+    margin-left: .75rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar .navbar-nav .nav-item {
+    margin-left: 1.5rem;
+  }
+}
+
+/* 
+  ===== Hero =====
+   1. Set hero width and height 100.
+   2. Applied fixed background to hero.
+   --- Row ---
+    1. Added height 100vh to row for center alignment.
+    2. Included Flex Center mixin.
+   --- Content ---
+    1. Set position to relative to further adjust content.
+    2. Set font sizes for text items.
+*/
+.hero {
+  width: 100%;
+  height: 90vh;
+  background: url("/explore-portland/img/hero/portland-skyline.jpg") left;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.hero .row {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hero-content {
+  position: relative;
+  top: 3.5rem;
+  left: 2rem;
+}
+
+.hero-content .lead {
+  font-size: 2.5rem;
+  color: #fafafa;
+}
+
+.hero-content .brochure-link {
+  color: #fafafa;
+}
+
+/* 
+  ===== Media Queries =====
+   --- hero content ---
+   1. Changed font sizes of text items to better fit screen sizes.
+   2. Positioned content at breakpoints
+*/
+@media (min-width: 768px) {
+  .hero .hero-content {
+    position: relative;
+    top: 3.5rem;
+  }
+  .hero .hero-content .lead {
+    font-size: 3rem;
+  }
+  .hero .hero-content .brochure-link {
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .hero .hero-content {
+    position: relative;
+    top: 3.5rem;
+  }
+  .hero .hero-content .lead {
+    font-size: 3.25rem;
+  }
+}
+
+.banner {
+  margin-top: 5rem;
+}
+
+.banner-title-wrapper {
+  background-color: rgba(45, 70, 49, 0.9);
+}
+
+.banner-title-wrapper .banner-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  font-family: "Asap", sans-serif;
+  color: #080808;
+  padding-top: 2rem;
+}
+
+.banner-title-wrapper .banner-date {
+  font-size: 1.5rem;
+  color: #080808;
+}
+
+.banner-event {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  border-top: solid 1px #4b4b4b;
+}
+
+.banner-event-title {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #080808;
+}
+
+.banner-event p {
+  color: #4b4b4b;
+}
+
+.banner-event .banner-link {
+  text-transform: uppercase;
+  font-size: .9rem;
+  font-weight: 500;
+}
+
+/* 
+  ===== Media Queries =====
+  1. Added Top and Bottom borders to all 3 columns (as well as Left on Event Columns)
+  2. Gave event content some padding left
+  3. made title <span> a display of block for visual line break.
+*/
+@media (min-width: 768px) {
+  .banner-title-wrapper {
+    border-top: solid 1px #4b4b4b;
+    border-bottom: solid 1px #4b4b4b;
+  }
+  .banner-event {
+    border-bottom: solid 1px #4b4b4b;
+    padding-left: 1rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .banner-title-wrapper .banner-title {
+    font-size: 3rem;
+  }
+  .banner-title-wrapper .banner-title span {
+    display: block;
+  }
+  .banner-event {
+    border-left: solid 1px #4b4b4b;
+    padding-left: 2rem;
+  }
+  .banner-event-title {
+    font-size: 1.55rem;
+  }
+}
+
+/* 
+  ===== Explore Section =====
+*/
+.explore {
+  margin-top: 4rem;
+}
+
+.explore-title {
+  padding-bottom: 1rem;
+}
+
+.explore-title h2 {
+  display: inline-block;
+  background-color: rgba(233, 233, 233, 0.87);
+  color: #080808;
+  -webkit-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.155);
+          box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.155);
+  font-size: 1.85rem;
+  font-family: "Asap", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 1rem 1.25rem;
+  margin-bottom: 1rem;
+  border-top-right-radius: .5rem;
+  border-bottom-right-radius: .5rem;
+}
+
+.explore .carousel {
+  -webkit-box-shadow: 0px 4px 10px 6px rgba(0, 0, 0, 0.155);
+          box-shadow: 0px 4px 10px 6px rgba(0, 0, 0, 0.155);
+}
+
+/* 
+  ===== Media Queries =====
+  1. Increased margin top of section
+  2. Increased Font size of title
+*/
+@media (min-width: 576px) {
+  .explore-title h2 {
+    font-size: 2.35rem;
+  }
+  .explore .carousel .carousel-item img {
+    height: 500px;
+  }
+}
+
+@media (min-width: 992px) {
+  .explore {
+    margin-top: 8rem;
+  }
+  .explore-title {
+    margin-bottom: 1.5rem;
+  }
+  .explore-title h2 {
+    font-size: 2.55rem;
+  }
+  .explore .carousel {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .explore .carousel .carousel-item img {
+    height: 620px;
+  }
+}
+
+/* 
+  ===== Top Picks Section =====
+*/
+.top-picks {
+  margin-top: 4rem;
+}
+
+.top-picks-title h2 {
+  display: inline-block;
+  background-color: rgba(233, 233, 233, 0.87);
+  color: #080808;
+  -webkit-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.155);
+          box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.155);
+  font-size: 1.85rem;
+  font-family: "Asap", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 1rem 1.25rem;
+  margin-bottom: 1rem;
+  border-top-right-radius: .5rem;
+  border-bottom-right-radius: .5rem;
+}
+
+.top-picks-content .container-lg {
+  padding-top: 1rem;
+}
+
+.top-picks-content .content-wrapper {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding-bottom: 4rem;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.top-picks-content .content-wrapper img {
+  -webkit-box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.26);
+          box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.26);
+}
+
+.top-picks-content .content-wrapper a {
+  background-color: rgba(44, 35, 27, 0.87);
+  margin: .5rem 0;
+  text-transform: uppercase;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.top-picks-content .content-wrapper a:hover {
+  background-color: rgba(54, 43, 33, 0.836);
+}
+
+.top-picks-content .content-wrapper .card {
+  width: 400px;
+  outline: none;
+  border: none;
+  color: #4b4b4b;
+}
+
+/* 
+  ===== Media Queries =====
+  1. Increased title font size at breakpoints.
+  2. Reduced Image width and height.
+  3. Reduced width of card to match image width.
+  4. Added margin top to section.
+*/
+@media (min-width: 576px) {
+  .top-picks-title h2 {
+    font-size: 2.35rem;
+  }
+  .top-picks-content .content-wrapper img {
+    width: 440px;
+    height: 320px;
+  }
+  .top-picks-content .content-wrapper .card {
+    width: 400px;
+  }
+}
+
+@media (min-width: 768px) {
+  .top-picks-content .content-wrapper img {
+    width: 360px;
+    height: 280px;
+  }
+  .top-picks-content .content-wrapper .card {
+    width: 360px;
+  }
+}
+
+@media (min-width: 992px) {
+  .top-picks {
+    margin-top: 8rem;
+  }
+  .top-picks-title h2 {
+    font-size: 2.55rem;
+  }
+  .top-picks-content .container-lg {
+    padding-top: 1.5rem;
+    width: 80%;
+  }
+  .top-picks-content .content-wrapper a {
+    font-size: 1.25rem;
+  }
+}
+
+/* 
+  ===== Contact Section =====
+*/
+.contact {
+  margin-top: 2.25rem;
+  background-color: rgba(45, 70, 49, 0.9);
+}
+
+.contact .container-lg {
+  padding-bottom: 6rem;
+}
+
+.contact-title h2 {
+  display: inline-block;
+  background-color: rgba(233, 233, 233, 0.87);
+  color: #080808;
+  -webkit-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.155);
+          box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.155);
+  font-size: 1.85rem;
+  font-family: "Asap", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 1rem 1.25rem;
+  margin-bottom: 1rem;
+  border-top-right-radius: .5rem;
+  border-bottom-right-radius: .5rem;
+}
+
+.contact-team {
+  width: 90%;
+  max-width: 460px;
+  margin-top: 2.5rem;
+  margin-bottom: 3rem;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.contact-team-wrapper h3 {
+  background-color: rgba(39, 31, 24, 0.829);
+  color: #fafafa;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  padding: .45rem 0;
+  padding-left: .5rem;
+}
+
+.contact-team-wrapper img {
+  -webkit-box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.26);
+          box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.26);
+}
+
+.contact-form-wrapper {
+  width: 90%;
+  max-width: 460px;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.contact-form-wrapper .contact-form-title {
+  color: #080808;
+  font-size: 1.65rem;
+  text-transform: uppercase;
+}
+
+.contact-form-wrapper .contact-form {
+  background-color: #e6e6e6;
+  padding: 2rem;
+  padding-top: 1.5rem;
+  border-radius: .5rem;
+}
+
+.contact-form-wrapper .contact-form label {
+  color: #080808;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.contact-form-wrapper .contact-form input {
+  border: none;
+}
+
+.contact-form-wrapper .contact-form textarea {
+  resize: none;
+  width: 100%;
+  border-radius: .35rem;
+  outline: none;
+  border: none;
+}
+
+.contact-form-wrapper .contact-form button {
+  text-transform: uppercase;
+}
+
+/* 
+  ===== Media Queries =====
+  1. Increased section title size at breakpoints.
+  2. Adjusted width of content sections, and added max-width sizes at breakpoints.
+  3. At tablet added a display of flexbox to the "row".
+  4. Removed center align "mixins" to content sections.
+  5. Added margin for vertical alignment.
+*/
+@media (min-width: 576px) {
+  .contact-title h2 {
+    font-size: 2.35rem;
+  }
+  .contact-team {
+    width: 75%;
+    max-width: 460px;
+  }
+  .contact-team-wrapper h3 {
+    font-size: 1.35rem;
+    padding: .5rem 0;
+    padding-left: .5rem;
+  }
+  .contact-form-wrapper {
+    width: 75%;
+    max-width: 460px;
+  }
+}
+
+@media (min-width: 768px) {
+  .contact .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contact-team {
+    position: relative;
+    left: 0;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+    max-width: 100%;
+    min-width: 460px;
+    margin-top: 3rem;
+  }
+  .contact-team-wrapper h3 {
+    font-size: 1.5rem;
+    padding: .65rem 0;
+    padding-left: .5rem;
+  }
+  .contact-form-wrapper {
+    position: relative;
+    left: 0;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+    max-width: 100%;
+    min-width: 460px;
+  }
+}
+
+@media (min-width: 992px) {
+  .contact {
+    margin-top: 5rem;
+  }
+  .contact-title {
+    margin-bottom: 1.5rem;
+  }
+  .contact-title h2 {
+    font-size: 2.55rem;
+  }
+  .contact-team {
+    max-width: 85%;
+  }
+  .contact-form-wrapper {
+    max-width: 85%;
+  }
+}
+
+/* 
+  ===== Footer =====
+*/
+footer {
+  margin: 3rem 0;
+}
+
+footer .social-links {
+  border-top: solid 1px #4b4b4b;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+footer .social-links a {
+  font-size: 2.25rem;
+  text-decoration: none;
+  padding: 1rem;
+}
+
+footer .social-links p {
+  font-family: "Asap", sans-serif;
+  font-size: 1.45rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+footer .copywrite-info {
+  border-bottom: solid 1px #4b4b4b;
+}
+
+footer .copywrite-info a {
+  margin-left: 1.5rem;
+}
+
+/* 
+  ===== Media Queries =====
+  1. Increased font sizes of <p> and anchor elements.
+  2. Removed top/bottom border from columns and added new top/bottom border to container.
+  3. Repositioned copywrite content to align with social links content.
+*/
+@media (min-width: 576px) {
+  footer .social-links p {
+    font-size: 1.65rem;
+  }
+}
+
+@media (min-width: 768px) {
+  footer .column-border {
+    border-top: solid 1px #4b4b4b;
+    border-bottom: solid 1px #4b4b4b;
+  }
+  footer .copywrite-info {
+    border-bottom: none;
+    position: relative;
+    top: 5.85rem;
+  }
+  footer .copywrite-info a {
+    margin-left: 1rem;
+  }
+  footer .social-links {
+    border-top: none;
+    margin-top: 1.15rem;
+  }
+}
+
+@media (min-width: 992px) {
+  footer .copywrite-info p {
+    font-size: 1.25rem;
+  }
+  footer .copywrite-info a {
+    font-size: 1.15rem;
+  }
+}
+/*# sourceMappingURL=main.css.map */

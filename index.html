@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>General Practice</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Asap:wght@700&family=Montserrat:wght@400;500;700&display=swap"
+    rel="stylesheet">
+  <!-- Font Awesome CDN  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" />
+  <!-- Bootstrap CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+
+  <!-- ===== Jumbotron ===== -->
+  <div class="jumbotron jumbotron-fluid mb-0">
+    <div class="container">
+      <h1 class="jumbotron__title display-3 text-center font-weight-bold">Explore Portland</h1>
+    </div>
+  </div>
+
+  <!-- ===== Navbar ===== -->
+  <nav class="navbar navbar-expand-md navbar-dark sticky-top">
+    <div class="container">
+
+      <!-- Brand -->
+      <a href="./index.html" class="navbar-brand">
+        Ex-<span>PDX</span>
+      </a>
+
+      <!-- Toggler Button -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbarNav"
+        aria-controls="collapsibleNavbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Collapsible Navbar Nav-->
+      <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="#" class="nav-link">Sites</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Events</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Recreation</a>
+          </li>
+          <li class="nav-item active">
+            <a href="#" class="nav-link">Plan Your Trip</a>
+          </li>
+        </ul>
+      </div>
+
+    </div> <!-- End Container-->
+  </nav>
+
+  <main>
+    <!-- ===== Hero ===== -->
+    <div class="hero">
+      <div class="container-fluid">
+        <div class="row">
+          <!-- Hero Content -->
+          <div class="hero-content col-sm-8 col-lg-6">
+            <p class="lead">Come explore all that Portland has to offer.</p>
+            <a href="#" class="brochure-link text-uppercase">Browse our brochure 2020</a>
+          </div>
+        </div>
+      </div>
+    </div> <!-- End Hero -->
+
+    <!-- ===== Banner Upcoming Events ===== -->
+    <aside class="banner">
+      <div class="container-sm">
+        <div class="row">
+
+          <!-- Title Column -->
+          <div class="col-sm-12 col-md-4 col-lg-4.5 banner-title-wrapper">
+            <h3 class="banner-title display-5"><span>Upcoming</span> Events</h3>
+            <p class="banner-date">December, 2025</p>
+          </div>
+
+          <!-- Event Columns-->
+          <div class="col-sm banner-event">
+            <h4 class="banner-event-title">Light Festival</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum sint quod velit alias soluta.</p>
+            <a href="#" class="banner-link">Learn More</a>
+          </div>
+          <div class="col-sm banner-event">
+            <h4 class="banner-event-title">Rose Concerts</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus illum atque unde?</p>
+            <a href="#" class="banner-link">Full Schedule</a>
+          </div>
+        </div>
+      </div>
+    </aside> <!-- End Banner -->
+
+
+    <!-- ===== Section: Explore ===== -->
+    <section class="explore">
+
+      <!-- Section Title -->
+      <div class="explore-title">
+        <h2 class="display-4">Explore City</h2>
+      </div>
+
+      <!-- Carousel -->
+      <div id="exploreCarousel" class="carousel slide" data-ride="carousel">
+
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#exploreCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#exploreCarousel" data-slide-to="1"></li>
+          <li data-target="#exploreCarousel" data-slide-to="2"></li>
+          <li data-target="#exploreCarousel" data-slide-to="3"></li>
+        </ol>
+
+        <div class="carousel-inner" role="listbox">
+
+          <!-- Slides -->
+          <div class="carousel-item active" role="option">
+            <img src="./img/carousel/trimet.jpg" height="360" alt="First Slide" class="d-block w-100">
+            <div class="carousel-caption">
+              <h4>TRI <span><i class="fas fa-bus-alt"></i></span> MET </h4>
+              <p>Zoom around the city using Portland's great transit options.</p>
+            </div>
+          </div>
+          <div class="carousel-item" role="option">
+            <img src="./img/carousel/food-trucks.jpeg" height="360" alt="Second Slide" class="d-block w-100">
+            <div class="carousel-caption">
+              <h4>Food <span><i class="fas fa-utensils"></i></span> Trucks</h4>
+              <p>You can taste it all, Portland offers over 500 food trucks!</p>
+            </div>
+          </div>
+          <div class="carousel-item" role="option">
+            <img src="./img/carousel/powells-books.jpg" height="360" alt="Third Slide" class="d-block w-100">
+            <div class="carousel-caption">
+              <h4>Powell's <span><i class="fas fa-book-open"></i></span> Books</h4>
+              <p>Stop by the famous landmark and massive book store.</p>
+            </div>
+          </div>
+          <div class="carousel-item" role="option">
+            <img src="./img/carousel/farmers-market.jpg" height="360" alt="Fourth Slide" class="d-block w-100">
+            <div class="carousel-caption">
+              <h4>Farmers <span><i class="fas fa-store"></i></span> Market</h4>
+              <p>Connect with Portland farmers and enjoy local entertainment every weekend.</p>
+            </div>
+          </div>
+
+          <!-- Controls -->
+          <a href="#exploreCarousel" class="carousel-control-prev" role="button" data-slide="prev">
+            <i class="fas fa-chevron-left"></i>
+            <span class="sr-only">Previous</span>
+          </a>
+
+          <a href="#exploreCarousel" class="carousel-control-next" role="button" data-slide="next">
+            <i class="fas fa-chevron-right"></i>
+            <span class="sr-only">Next</span>
+          </a>
+
+        </div>
+      </div>
+    </section> <!-- End Section -->
+
+
+    <!-- ===== Section: Top Picks ===== -->
+    <section class="top-picks">
+
+      <!-- Section Title -->
+      <div class="top-picks-title">
+        <h2 class="display-4">Our Picks</h2>
+      </div>
+
+      <!-- Section Content -->
+      <div class="top-picks-content">
+        <div class="container-lg">
+          <div class="row">
+            <!-- Content Boxes -->
+            <div class="col-md-6">
+              <div class="content-wrapper">
+                <img src="./img/top-picks/portland-zoo.jpg" width="400" height="240" alt="Add After">
+                <a href="#boxOne" class="btn btn-primary" data-toggle="collapse" aria-expanded="false"
+                  aria-controls="boxOne" title="More Info">
+                  Portland Zoo
+                </a>
+                <div id="boxOne" class="collapse">
+                  <div class="card card-body">
+                    Approximately 2 miles southwest of downtown Portland. The 64-acre zoo is the oldest zoo west of the
+                    Mississippi River.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="content-wrapper">
+                <img src="./img/top-picks/multnomah-falls.jpg" width="400" height="240" alt="Add After">
+                <a href="#boxTwo" class="btn btn-primary" data-toggle="collapse" aria-expanded="false"
+                  aria-controls="boxTwo" title="More Info">
+                  Multnomah Falls
+                </a>
+                <div id="boxTwo" class="collapse">
+                  <div class="card card-body">
+                    The beautiful Multnomah Falls is the tallest waterfall in the state of Oregon, and just a 30 minute
+                    drive from the city.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="content-wrapper">
+                <img src="./img/top-picks/rose-garden.jpg" width="400" height="240" alt="Add After">
+                <a href="#boxThree" class="btn btn-primary" data-toggle="collapse" aria-expanded="false"
+                  aria-controls="boxThree" title="More Info">
+                  Rose Garden
+                </a>
+                <div id="boxThree" class="collapse">
+                  <div class="card card-body">
+                    The International Rose Test Garden features more than 10,000 roses. The roses bloom from April
+                    through October with the peak coming in June.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="content-wrapper">
+                <img src="./img/top-picks/aerial-tram.jpg" width="400" height="240" alt="Add After">
+                <a href="#boxFour" class="btn btn-primary" data-toggle="collapse" aria-expanded="false"
+                  aria-controls="boxFour" title="More Info">
+                  Aeriel Tram
+                </a>
+                <div id="boxFour" class="collapse">
+                  <div class="card card-body">
+                    One of the only aerial commuter trams in the country, Portland Aerial Tram connects South Waterfront
+                    to the main Oregon Health & Science University campus.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section> <!-- End Section -->
+
+    <!-- ===== Section: Contact ===== -->
+    <section class="contact">
+
+      <div class="contact-title">
+        <h2 class="display-4">Get In Touch</h2>
+      </div>
+
+      <div class="container-lg">
+        <div class="row">
+
+          <!-- Contact Team -->
+          <div class="col-md-5 contact-team">
+            <div class="contact-team-wrapper">
+              <h3 class="contact-team-title display-5">Meet Our Team</h3>
+              <img src="./img/our-team/our-team.png" width="440" height="320" alt="Our Team" class="d-block w-100">
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="col-md-5 contact-form-wrapper">
+            <div class="contact-form">
+              <h3 class="contact-form-title display-5 text-center">Send a Message</h3>
+              <form action="#">
+                <div class="form-group">
+                  <label for="name">Your name:</label>
+                  <input type="text" class="form-control" id="name" name="name">
+                </div>
+                <div class="form-group">
+                  <label for="email">Email:</label>
+                  <input type="email" class="form-control" id="email" name="email">
+                </div>
+                <div class="form-group">
+                  <label for="message">Have a question?</label><br>
+                  <textarea name="message" id="message" cols="40" rows="4"></textarea>
+                </div>
+                <button class="btn btn-primary" type="submit">Send Message</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> <!-- End Section -->
+
+  </main>
+
+  <footer>
+
+    <div class="container">
+      <div class="row">
+
+        <!-- Social Links Column -->
+        <div class="col-md order-md-last column-border">
+          <div class="social-links">
+            <a href="#" class="facebook-link" title="Facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="twitter-link" title="Twitter">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="instagram-link" title="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <p class="social-links-title display-5">Social Media Pages</p>
+          </div>
+        </div>
+
+        <!-- Copywrite Column -->
+        <div class="col-md-7 col-lg-6 column-border">
+          <div class="copywrite-info">
+            <p class="d-inline">&copy Explore Portland</p>
+            <a href="#" class="privacy-policy-link">Privacy Policy</a>
+            <a href="#" class="cookies-policy-link">Cookies Policy</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <!-- jQuery, Popper.js, Bootstrap.js-->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+    integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
